@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>HomePage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body{
+            font-family: 'Aclonica';
+            height: 100%;
+            background-image: url("BackgroundImg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            box-shadow: inset 0 0 100px 20px #282a2d;
+        }
+        header{
+            height: 250px;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;          
+
+        }
+        .Text{
+            font-size: 50px;
+            
+        }
+        .Body{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .Box{
+            font-family: 'Aclonica';
+            color: white;
+            background-color: #271f37;
+            border: 1px solid white;
+            margin-top: 50px;
+            width: 30%;
+            height: 300px;
+            padding: 30px;
+            border-radius: 20px;
+            
+        }
+        .BoxContainer{
+            margin: 0;
+            display: flex;
+            width: 70%;
+            height: 50%;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        img{
+            width: 100px;
+            margin-bottom: 50px;
+        }
+        footer{
+            display: flex;
+            align-items:flex-end;
+            justify-content: center;
+            height: 14%;
+        }
+        i{
+            font-size: 30px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+      <h1 class="Text"> Quiz Master</h1>
+    </header>
+    <div class="Body">
+        <div class="BoxContainer">
+            <button class="Box" id="Math" onclick="window.location='Math.html';">
+                <img src="https://clipartspub.com/images/math-clipart-clear-background.png">
+                <h1>Math</h1>
+            </button>
+    
+            <button class="Box" id="GuessFlag" onclick="window.location='GuessFlag.html';">
+                <img style="width: 80px;" src="https://webstockreview.net/images/geography-clipart-clip-art.png">
+                <h1>Guess Flags</h1>
+            </button>
+        </div>
+        
+    </div>
+    <footer>
+        <a href="https://www.facebook.com/"  class="ContactBn"><i class='bx bxl-facebook-circle' style='color:#79adfa'  ></i></a>
+        <a href="https://www.instagram.com/" class="ContactBn" ><i class='bx bxl-instagram-alt' style='color:#ea95e8'  ></i></a>
+        <a href="https://twitter.com/" class="ContactBn"><i class='bx bxl-twitter' style='color:#95daea'  ></i></a>
+    </footer>
+    
+</body>
+</html>

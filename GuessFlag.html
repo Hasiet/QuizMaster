@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Flag</title>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <style>
+        #check {
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            justify-content: space-between;
+            
+            
+        }
+        a{
+            display: flex; 
+            align-items: center; 
+            margin-left: 10px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Aclonica';
+        }
+        .container {
+            width: 90%;
+            max-width: 37.5em;
+            background-color: #ffffff;
+            padding: 3em 0.5em;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 0.8em;
+            
+        }
+        h3 {
+            text-align: center;
+            width: 60%;
+            margin: 0 auto 2em auto;
+            font-size: 1.2em;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            line-height: 1.8em;
+            color: #010c39;
+        }
+        .draggable-objects,
+        .drop-points {
+            display: flex;
+            justify-content: space-around;
+            padding: 1em;
+
+        }
+        .draggable-image {
+            width: 8em;
+            cursor: move;
+            margin: 17px;
+        }
+        img {
+            width: 8em;
+            filter: drop-shadow(0 0.3em 0.9em rgba(0, 0, 0, 0.25));
+        }
+        .countries {
+            width: 10em;
+            height: 8em;
+            display: grid;
+            place-items: center;
+            border: 0.25em dashed #010c39;
+            border-radius: 0.8em;
+            margin: 10px;
+        }
+        .dropped {
+            padding: 0;
+            background-color: #e5ffc8;
+        }
+        .droppedFalse{
+            padding: 0;
+            background-color: #df726d;
+            
+        }
+        .controls-container {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            flex-direction: column;
+            top: 0;
+        }
+        .controls-container button {
+            font-size: 1.12em;
+            padding: 0.8em 1em;
+            border-radius: 0.2em;
+            border: none;
+            outline: none;
+            color: #010c39;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+        }
+        .controls-container p {
+            color: #ffffff;
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./Main.html">Go Back</a>
+        <h1>Quiz Master</h1>
+        <p></p>
+    </header>
+    <div class="container">
+        <h3>Drag & Drop The Flags Over Their Respective Country Names</h3>
+        <div class="draggable-objects"></div>
+        <div class="drop-points"></div>
+    </div>
+    <div class="controls-container">
+        <p style="color: black;" id="result"></p>
+        <button id="start", onclick="Restart()">Start Again</button>
+    </div>
+    <script src="GuessFlag.js"></script>
+</body>
+</html>

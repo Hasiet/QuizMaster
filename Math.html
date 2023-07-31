@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <style>
+        #check {
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            font-family: 'Aclonica';
+        }
+        header{
+            justify-content: space-between;
+
+        }
+        .Body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: 50px;
+            color: gray;
+        }
+        input{
+            width: 70%;
+            height: 80px;
+            font-size: 50px;
+            border-radius: 30px;
+            text-align: center;
+        }
+        #Quiz{
+            margin: 30px;
+        }
+        
+        .Buttons{
+            margin: 20px;
+            display: flex;
+        }
+        .bn{
+            padding: 20px;
+            font-size: 50px;
+            border-radius: 30px;
+            margin: 30px;
+            
+        }
+        .CountLb{
+            margin: 10px;
+            margin-left: 30px;
+
+        }
+        .header2nd{
+            font-size: 50px;
+            font-weight:bold;
+            color: gray;
+            display: flex;
+            margin: 0px;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        a{
+            display: flex; 
+            align-items: center; 
+            margin-left: 10px; 
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        .StartAg{
+            display: none;
+            padding: 20px;
+            font-size: 30px;
+            border: none;
+            background-color: white;
+            margin: 30px;
+            text-decoration: underline;
+            color: gray;
+        }
+    </style>
+</head> 
+<body>
+    <header>
+        <a href="./Main.html">Go Back</a>
+        <h1> Quiz Master</h1>
+        <p></p>
+    </header>
+    <div class="header2nd">
+        <p class="CountLb" id="count"></p>
+        <p class="Result" id="Result"></p>
+        <button class="StartAg" id="StartAg" disabled onClick="window.location.reload();">Start Again!</button>
+    </div>
+    <div class="Body">
+    <div class="Body">
+        <h1 id="Quiz"></h1>
+        <input placeholder="Enter:" id="Value">
+        <div class="Buttons">
+            <button class="bn" onclick="Check()" id="Check">Check</button>
+            <button class="bn" onclick="Next()" id="Next">Next</button>
+        </div>
+        
+         
+    </div>
+    <h1 id="check"></h1>
+    <script src="Math.js"></script>
+</body>
+</html>
